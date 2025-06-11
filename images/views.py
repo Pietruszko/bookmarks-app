@@ -16,7 +16,7 @@ def image_create(request):
             new_image.user = request.user
             new_image.save()
             messages.success(request, 'Image added successfully')
-            # redirect to new created iitem detail view
+            # redirect to new created item detail view
             return redirect(new_image.get_absolute_url())
     else:
         # build form with data provided by the bookmarklet via GET
@@ -24,8 +24,5 @@ def image_create(request):
     return render(
         request,
         'images/image/create.html',
-        {
-            'section': 'images',
-            'form': form
-        }
+        {'section': 'images', 'form': form}
     )
