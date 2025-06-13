@@ -27,6 +27,7 @@
       {{ image.description|linebreaks }}
     </div>
     <div class="image-likes">
+    <div>Likes:</div>
       {% for user in users_like %}
         <div>
           {% if user.profile.photo %}
