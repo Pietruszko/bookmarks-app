@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'images',
     'easy_thumbnails',
+    'actions',
 ]
 
 LOGIN_REDIRECT_URL = 'dashboard'
