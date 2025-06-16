@@ -58,9 +58,7 @@ def dashboard(request):
     return render(
         request,
         'account/dashboard.html',
-        {
-            'section': 'dashboard', 'actions': actions
-        }
+        {'section': 'dashboard', 'actions': actions},
     )
 
 def register(request):
